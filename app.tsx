@@ -1,6 +1,10 @@
-import React, { ComponentType } from 'react'
+// deno-lint-ignore-file no-explicit-any
 
-export default function App({ Page, pageProps }: { Page: ComponentType<any>, pageProps: any }) {
+import React, { ComponentType } from "react";
+
+export default function App(
+  { Page, pageProps }: { Page: ComponentType<any>; pageProps: any },
+) {
   return (
     <main>
       <head>
@@ -8,5 +12,5 @@ export default function App({ Page, pageProps }: { Page: ComponentType<any>, pag
       </head>
       <Page {...pageProps} />
     </main>
-  )
+  );
 }
