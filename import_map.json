@@ -1,6 +1,7 @@
 {
   "imports": {
     "~/": "./",
+    "@material-ui/core": "https://esm.sh/@material-ui/core@4.12.3",
     "aleph/": "https://deno.land/x/aleph@v0.3.0-beta.12/",
     "aleph/types": "https://deno.land/x/aleph@v0.3.0-beta.12/types.d.ts",
     "aleph/web": "https://deno.land/x/aleph@v0.3.0-beta.12/framework/core/mod.ts",
