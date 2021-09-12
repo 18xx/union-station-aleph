@@ -7,6 +7,8 @@ import {
 } from "@material-ui/core";
 import React, { useState, VFC } from "react";
 
+import LeftMenu from "~/components/left_menu.tsx";
+
 type Props = {
   readonly siteTitle: string;
 };
@@ -45,7 +47,7 @@ const Header: VFC<Props> = ({ siteTitle }) => {
         </Toolbar>
       </AppBar>
       <Drawer open={menuOpen} onClose={onClose}>
-        Left Menu Goes Here
+        <LeftMenu closeMenu={onClose} />
       </Drawer>
     </header>
   );
